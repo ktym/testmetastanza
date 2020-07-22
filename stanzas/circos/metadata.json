@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "stanza": "http://togostanza.org/resource/stanza#"
+  },
+  "@id": "circos",
+  "stanza:label": "Circos",
+  "stanza:definition": "Circos plot",
+  "stanza:parameter": [
+    {
+      "stanza:key": "say-to",
+      "stanza:example": "world",
+      "stanza:description": "who to say hello to",
+      "stanza:required": false
+    }
+  ],
+  "stanza:usage": "<togostanza-circos></togostanza-circos>",
+  "stanza:type": "Stanza",
+  "stanza:context": "Genome",
+  "stanza:display": "Graph",
+  "stanza:provider": "DBCLS",
+  "stanza:license": "MIT",
+  "stanza:author": "Toshiaki Katayama",
+  "stanza:address": "ktym@dbcls.jp",
+  "stanza:contributor": [],
+  "stanza:created": "2020-07-22",
+  "stanza:updated": "2020-07-22"
+}
