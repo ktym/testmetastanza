@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": "ktym/testmetastanza",
   "dependencies": {
-    "togostanza": "togostanza/togostanza-js"
+    "togostanza": "github:togostanza/togostanza-js"
   },
   "engines": {
     "node": ">=12"
