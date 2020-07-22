@@ -1,0 +1,13 @@
+{
+  "name": "testmetastanza",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "ktym/testmetastanza",
+  "dependencies": {
+    "togostanza": "togostanza/togostanza-js"
+  },
+  "engines": {
+    "node": ">=12"
+  },
+  "private": true
+}
