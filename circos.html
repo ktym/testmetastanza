@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Circos</title>
+    <script type="module" src="./circos.js" async></script>
+    <link rel="stylesheet" href="./togostanza.css">
+  </head>
+
+  <body>
+    <div id="contents">
+      <h1 class="page_ttl">
+        Circos
+      </h1>
+
+      <ul class="showcase_icn">
+          <li>Genome</li>
+
+          <li>Graph</li>
+
+          <li>MIT</li>
+      </ul>
+
+      <p class="lead">
+        &lt;togostanza-circos&gt;&lt;/togostanza-circos&gt;
+      </p>
+
+      <div class="showcase_detail">
+        <ul class="showcase_id">
+            <li>
+              <dl>
+                <dt></dt>
+
+                <dd>
+                  <p class="id_box">
+                    <input type="text" value=world data-param-key=say-to>
+
+                  </p>
+
+                  <p class="eg">
+                    who to say hello to
+                  </p>
+                </dd>
+              </dl>
+            </li>
+        </ul>
+
+        <div class="showcase_code">
+          <code>&lt;togostanza-circos&gt;&lt;/togostanza-circos&gt;</code>
+        </div>
+
+        <p class="explain">
+          The above element will automatically embed the following Stanza in your HTML page.
+        </p>
+
+        <div class="showcase_box">
+          <togostanza-circos></togostanza-circos>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const stanza = document.querySelector('togostanza-circos');
+      const inputs = document.querySelectorAll('.showcase_id input');
+
+      for (const input of inputs) {
+        function onParamChange() {
+          stanza.setAttribute(input.dataset.paramKey, input.value);
+        }
+
+        input.addEventListener('input', onParamChange);
+        onParamChange();
+      }
+    </script>
+  </body>
+</html>
